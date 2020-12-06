@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { Client } = require('../models');
 
+
 // Inserção de dado
 router.post('/', async (req, res)=>{
     const client = await Client.create(req.body);
